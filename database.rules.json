@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "users": {
+      ".indexOn": ["username"]
+    },
+    ".read": true,
+    ".write": true
+  }
+}

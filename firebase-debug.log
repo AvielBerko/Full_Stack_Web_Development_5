@@ -1,0 +1,88 @@
+[debug] [2023-05-23T11:04:55.938Z] ----------------------------------------------------------------------
+[debug] [2023-05-23T11:04:55.939Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aviel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-05-23T11:04:55.940Z] CLI Version:   12.1.0
+[debug] [2023-05-23T11:04:55.940Z] Platform:      win32
+[debug] [2023-05-23T11:04:55.940Z] Node Version:  v18.16.0
+[debug] [2023-05-23T11:04:55.940Z] Time:          Tue May 23 2023 14:04:55 GMT+0300 (Israel Daylight Time)
+[debug] [2023-05-23T11:04:55.940Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-23T11:04:56.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-23T11:04:56.011Z] > authorizing via signed-in user (9155988@gmail.com)
+[debug] [2023-05-23T11:04:56.524Z] java version "20.0.1" 2023-04-18
+
+[debug] [2023-05-23T11:04:56.524Z] Java(TM) SE Runtime Environment (build 20.0.1+9-29)
+Java HotSpot(TM) 64-Bit Server VM (build 20.0.1+9-29, mixed mode, sharing)
+
+[debug] [2023-05-23T11:04:56.543Z] Parsed Java major version: 20
+[info] i  emulators: Starting emulators: auth, database, hosting, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, database, hosting, storage"}}
+[debug] [2023-05-23T11:04:56.550Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-23T11:04:56.551Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-23T11:04:56.551Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-23T11:04:56.551Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-23T11:04:56.551Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-23T11:04:56.551Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":8080},{"address":"::1","family":"IPv6","port":8080}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-05-23T11:04:56.560Z] [hub] writing locator at D:\AVIEL\Temp\hub-full-stack-5.json
+[debug] [2023-05-23T11:04:56.563Z] > refreshing access token with scopes: []
+[debug] [2023-05-23T11:04:56.564Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-23T11:04:56.564Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-23T11:04:56.730Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-23T11:04:56.730Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-23T11:04:56.734Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5 [none]
+[debug] [2023-05-23T11:04:57.026Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5 200
+[debug] [2023-05-23T11:04:57.026Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5 {"projectId":"full-stack-5","projectNumber":"701884432339","displayName":"full-stack-5","name":"projects/full-stack-5","resources":{"hostingSite":"full-stack-5","realtimeDatabaseInstance":"full-stack-5-default-rtdb","storageBucket":"full-stack-5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f4d9a1cb-7dc0-43df-a1cb-11488f4b214d"}
+[debug] [2023-05-23T11:04:57.027Z] database rules config:  [{"instance":"full-stack-5-default-rtdb","rules":"D:\\AVIEL\\Desktop\\FullStack5\\JSONPlaceHolderApp\\database.rules.json"}]
+[debug] [2023-05-23T11:04:57.031Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2023-05-23T11:04:57.031Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-05-23T11:04:57.031Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2023-05-23T11:04:57.031Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Aviel\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.0.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning"],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Aviel\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.0.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\"],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2023-05-23T11:05:01.437Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-05-23T11:05:01.910Z] Temp file directory for storage emulator: D:\AVIEL\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: D:\\AVIEL\\Temp/firebase/storage/blobs"}}
+[debug] [2023-05-23T11:05:01.916Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/full-stack-5/sites 
+[debug] [2023-05-23T11:05:03.179Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/full-stack-5/sites 200
+[debug] [2023-05-23T11:05:03.179Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/full-stack-5/sites {"sites":[{"name":"projects/full-stack-5/sites/full-stack-5","defaultUrl":"https://full-stack-5.web.app","appId":"1:701884432339:web:86173603ac097aaacd7926","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-23T11:05:03.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5/webApps/1:701884432339:web:86173603ac097aaacd7926/config [none]
+[debug] [2023-05-23T11:05:04.127Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5/webApps/1:701884432339:web:86173603ac097aaacd7926/config 200
+[debug] [2023-05-23T11:05:04.127Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5/webApps/1:701884432339:web:86173603ac097aaacd7926/config {"projectId":"full-stack-5","appId":"1:701884432339:web:86173603ac097aaacd7926","databaseURL":"https://full-stack-5-default-rtdb.firebaseio.com","storageBucket":"full-stack-5.appspot.com","locationId":"us-central","apiKey":"AIzaSyCGZ40p5_6VRIiqos8H3kSpDvDmDGqPLTc","authDomain":"full-stack-5.firebaseapp.com","messagingSenderId":"701884432339","measurementId":"G-QHLGGHQCWL"}
+[debug] [2023-05-23T11:05:04.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5 [none]
+[debug] [2023-05-23T11:05:04.550Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5 200
+[debug] [2023-05-23T11:05:04.550Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/full-stack-5 {"projectId":"full-stack-5","projectNumber":"701884432339","displayName":"full-stack-5","name":"projects/full-stack-5","resources":{"hostingSite":"full-stack-5","realtimeDatabaseInstance":"full-stack-5-default-rtdb","storageBucket":"full-stack-5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f4d9a1cb-7dc0-43df-a1cb-11488f4b214d"}
+[info] i  hosting[full-stack-5]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[full-stack-5]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-05-23T11:05:04.564Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-05-23T11:05:04.564Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-05-23T11:05:04.564Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Aviel\\.cache\\firebase\\emulators\\ui-v1.11.6\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Aviel\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.6\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-05-23T11:05:04.635Z] Web / API server started at 127.0.0.1:8080
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:8080\n"}}
+[debug] [2023-05-23T11:05:04.635Z] Web / API server started at ::1:8080
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:8080\n"}}
+[debug] [2023-05-23T11:05:04.824Z] >>> [apiv2][query] PUT http://127.0.0.1:9000/.settings/rules.json ns=full-stack-5-default-rtdb
+[debug] [2023-05-23T11:05:04.824Z] >>> [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json "{\r\n  \"rules\": {\r\n    \"users\": {\r\n      \".indexOn\": [\"username\"]\r\n    },\r\n    \".read\": true,\r\n    \".write\": true\r\n  }\r\n}\r\n"
+[debug] [2023-05-23T11:05:05.084Z] <<< [apiv2][status] PUT http://127.0.0.1:9000/.settings/rules.json 200
+[debug] [2023-05-23T11:05:05.084Z] <<< [apiv2][body] PUT http://127.0.0.1:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:8080/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI            │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:8080/auth     │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Database       │ 127.0.0.1:9000 │ http://127.0.0.1:8080/database │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                            │
+├────────────────┼────────────────┼────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:8080/storage  │
+└────────────────┴────────────────┴────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[warn] !  database: Fatal error occurred: 
+   Database Emulator has exited with code: 3221225786, 
+   stopping all running emulators {"metadata":{"emulator":{"name":"database"},"message":"Fatal error occurred: \n   Database Emulator has exited with code: 3221225786, \n   stopping all running emulators"}}
